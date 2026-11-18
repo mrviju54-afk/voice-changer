@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Voice Changer Studio</title>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">VC</div>
+      <div>
+        <h1>Voice Changer Studio</h1>
+        <p>Change your audio with creative voice effects</p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <label class="label" for="effect">Select Voice Effect</label>
+      <select id="effect">
+        <option value="none">Original Voice</option>
+        <option value="male">Male Voice</option>
+        <option value="female">Female Voice</option>
+        <option value="deep">Deep Voice</option>
+        <option value="robot">Robot</option>
+        <option value="cartoon">Cartoon</option>
+        <option value="echo">Echo</option>
+        <option value="alien">Alien</option>
+        <option value="monster">Monster</option>
+        <option value="helium">Helium</option>
+        <option value="telephone">Telephone</option>
+        <option value="slow">Slow</option>
+        <option value="fast">Fast</option>
+      </select>
+
+      <label class="label" for="file">Choose MP3 or MP4 File</label>
+      <input id="file" type="file" accept=".mp3,.mp4,audio/mpeg,video/mp4">
+
+      <div id="fileInfo" class="file-info">No file selected</div>
+
+      <div class="preview-area">
+        <h2>20-Second Preview</h2>
+        <audio id="preview" controls></audio>
+        <p class="hint">The preview is created automatically after you select a file.</p>
+      </div>
+
+      <button id="download" disabled>Download Full Converted File</button>
+      <div id="status" role="status" aria-live="polite">Select a voice effect and upload a file to begin.</div>
+      <div class="progress-wrap"><div id="progress"></div></div>
+    </section>
+
+    <footer>Processing happens in your browser. Large files may take longer and require available device memory.</footer>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
