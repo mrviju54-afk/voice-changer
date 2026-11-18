@@ -1,0 +1,23 @@
+:root { font-family: Arial, sans-serif; color: #edf2f7; background: #0b1220; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; padding: 24px 14px; }
+.app { max-width: 680px; margin: 0 auto; }
+.header { display: flex; align-items: center; gap: 14px; margin: 10px 0 24px; }
+.logo { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: #5b6cff; font-weight: 800; }
+h1 { margin: 0 0 5px; font-size: 24px; }
+.header p, footer, .hint { color: #a9b6ca; margin: 0; font-size: 13px; line-height: 1.5; }
+.panel { background: #151f31; border: 1px solid #29364b; border-radius: 18px; padding: 22px; box-shadow: 0 12px 40px #0005; }
+.label { display: block; font-size: 14px; font-weight: 700; margin: 14px 0 8px; }
+select, input[type=file] { width: 100%; padding: 13px; border: 1px solid #3a4962; border-radius: 10px; color: #f8fafc; background: #0d1728; }
+input[type=file] { font-size: 13px; }
+.file-info { color: #b8c5d8; font-size: 13px; margin-top: 10px; overflow-wrap: anywhere; }
+.preview-area { margin-top: 24px; padding: 16px; border-radius: 12px; background: #0d1728; }
+h2 { font-size: 16px; margin: 0 0 12px; }
+audio { width: 100%; }
+.hint { margin-top: 8px; }
+button { width: 100%; margin-top: 20px; border: 0; border-radius: 11px; padding: 15px; background: #6878ff; color: white; font-size: 15px; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+#status { min-height: 42px; padding-top: 15px; font-size: 13px; line-height: 1.5; color: #d3dced; }
+.progress-wrap { height: 7px; background: #29364b; border-radius: 9px; overflow: hidden; }
+#progress { height: 100%; width: 0; background: #7b8aff; transition: width .2s; }
+footer { text-align: center; margin: 18px 4px; }
